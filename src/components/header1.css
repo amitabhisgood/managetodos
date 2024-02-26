@@ -1,0 +1,62 @@
+/* Header.css */
+.header {
+    background-color: #fff; /* White background */
+}
+
+.menu {
+    list-style: none; /* Remove list markers */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display menu items horizontally */
+}
+
+.menu > li {
+    position: relative; /* Relative positioning for submenu */
+}
+
+.menu > li > a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Menu item text color */
+}
+
+.submenu {
+    display: none; /* Hide submenu by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* White background for submenu */
+    border-top: 1px solid #ccc; /* Top border for submenu */
+}
+
+.menu > li:hover .submenu {
+    display: block; /* Show submenu on hover */
+}
+
+.submenu > li {
+    padding: 10px;
+}
+
+.submenu > li:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+.login-form {
+    padding: 10px;
+}
+
+.login-form input {
+    margin-bottom: 10px;
+}
+
+.login-form button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}

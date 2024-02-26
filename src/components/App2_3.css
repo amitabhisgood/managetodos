@@ -1,0 +1,39 @@
+/* App.css */
+.App {
+    text-align: center;
+  }
+  
+  /* TopComponent.css */
+  .top-menu {
+    display: flex; /* Make the top-menu horizontal */
+  }
+  
+  .top-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .top-menu ul li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    position: relative; /* Add relative positioning */
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position the submenu below the parent li */
+    left: 0; /* Align the submenu with the left side of the parent li */
+  }
+  
+  .top-menu ul li:hover .submenu {
+    display: block;
+  }
+  
+  /* CenterComponent.css */
+  .center-body {
+    margin-top: 20px; /* Adjust as needed */
+  }
+  

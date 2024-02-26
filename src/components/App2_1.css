@@ -1,0 +1,32 @@
+/* App.css */
+.App {
+    text-align: center;
+  }
+  
+  /* TopComponent.css */
+  .top-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .top-menu ul li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+  }
+  
+  .top-menu ul li:hover .submenu {
+    display: block;
+  }
+  
+  /* CenterComponent.css */
+  .center-body {
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
