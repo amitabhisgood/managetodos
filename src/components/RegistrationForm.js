@@ -35,14 +35,14 @@ const RegistrationForm = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="User Name" value={userName} onChange={(e) => setUserName(e.target.value)} required />
-        <input type="text" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
-        <input type="text" placeholder="Middle Name" value={middleName} onChange={(e) => setMiddleName(e.target.value)} />
-        <input type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} required />
-        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-        <button type="submit">Register</button>
+      <form style={{top:'40%'}} onSubmit={handleSubmit}>
+        <input type="text" placeholder="User Name" value={userName} onChange={(e) => setUserName(e.target.value)} required /><br/>
+        <input type="text" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} required /><br/>
+        <input type="text" placeholder="Middle Name" value={middleName} onChange={(e) => setMiddleName(e.target.value)} /><br/>
+        <input type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} required /><br/>
+        <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required /><br/>
+        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required /><br/>
+        <button type="submit">Register</button><br/>
       </form>
       <p>{response}</p>
     </div>
