@@ -42,5 +42,17 @@
     margin-top: 15px; /* Adjusted vertical gap between top-menu and CenterComponent */
     height: calc(100vh - 15px); /* Calculate the height of the remaining screen */
     overflow-y: auto; /* Add scroll if content exceeds the height */
-}
+  }
+
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% of the viewport height */
+  }
+  
+  .center-content {
+    /* Add any additional styles for your centered content */
+  }
+  
   

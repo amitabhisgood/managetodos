@@ -12,7 +12,14 @@ function App() {
   const [responseHTML, setResponseHTML] = useState(null); // State to hold response HTML
 
   const handleLogin = () => {
-    setFormToShow(<LoginForm />);
+//    axios.post('https://fc97-2401-4900-1f27-ed35-a519-9e2b-5826-d6d0.ngrok-free.app/register', { /* your data */ })
+      axios.get('https://localhost:7085/Register')
+      .then(response => {
+        setResponseHTML(response.data); // Set response HTML to state
+      }) 
+      .catch(error => {
+        console.error('Error sending GET message to localhost:', error);
+      });
   } 
 
   const handleRegister = () => {

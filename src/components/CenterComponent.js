@@ -3,8 +3,10 @@ import './App2.css';
 
 const CenterComponent = ({ formComponent }) => {
   return (
-    <div className="center-body">
-      {formComponent}
+    <div className="center-container">
+      <div className="center-content">
+        {formComponent}
+      </div>
     </div>
   );
 }
